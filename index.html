@@ -114,8 +114,25 @@
 </div>
   </div>
     <section id="contact" class="section">
-      
-      <a href="mailto:nanaoghenekevwe@gmail.com"> <button class="contact-btn">Contact Me</button></a>
+    <h2 class="section-title">Get in touch</h2>
+    <button class="contact-btn" id="contact-toggle" type="button" aria-expanded="false" aria-controls="contact-form">
+      Contact Me
+    </button>
+    <form class="contact-form" id="contact-form" hidden>
+      <div class="form-field">
+        <label for="contact-name">Your name</label>
+        <input id="contact-name" name="name" type="text" autocomplete="name" required>
+      </div>
+      <div class="form-field">
+        <label for="contact-email">Your email</label>
+        <input id="contact-email" name="email" type="email" autocomplete="email" required>
+      </div>
+      <div class="form-field">
+        <label for="contact-message">Message</label>
+        <textarea id="contact-message" name="message" rows="5" required></textarea>
+      </div>
+      <button class="contact-btn" type="submit">Send message</button>
+    </form>
     </section>
   </main>
 
@@ -136,5 +153,7 @@
   </div>
 </footer>
 
+<script type="module" src="script.js">
+</script>
 </body>
 </html>
