@@ -234,8 +234,45 @@ nav {
   gap: 18px 30px;
   margin-top: 30px;
   margin-bottom: 35px;
-  
 }
+
+.about-item {
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+  padding: 1rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.about-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.about-label-row > i {
+  color: var(--accent-hover);
+  font-size: 1.2rem;
+}
+
+.about-item-text {
+  min-width: 0;
+}
+
+.about-label {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.about-value {
+  color: var(--white);
+  overflow-wrap: anywhere;
+}
+
 .contact-btn {
   display: inline-block;
   padding: 0.75rem 1.4rem;
@@ -375,6 +412,23 @@ footer {
 
   .about-info {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .about-item {
+    text-align: center;
+  }
+
+  #contact > .section-title {
+    text-align: center;
+  }
+
+  #contact > .contact-btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .contact-form {
+    text-align: left;
   }
 
   .section {
